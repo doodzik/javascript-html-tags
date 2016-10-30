@@ -1,0 +1,60 @@
+{
+  "name": "javascript-html-tags",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./src/tags.js",
+  "scripts": {
+    "test": "xo && mocha"
+  },
+  "author": "frederik dudzik",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^3.1.0",
+    "xo": "^0.16.0"
+  },
+  "dependencies": {
+    "lodash": "^4.16.4"
+  },
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "semicolon": false,
+    "envs": [
+      "node",
+      "mocha"
+    ],
+    "rules": {
+      "new-cap": "off",
+      "babel/new-cap": "off",
+      "brace-style": [
+        "error",
+        "stroustrup"
+      ],
+      "no-multi-spaces": [
+        "off",
+        {
+          "exceptions": {
+            "VariableDeclarator": true,
+            "ImportDeclaration": true,
+            "Property": true
+          }
+        }
+      ],
+      "import/no-named-as-default-member": "warn",
+      "key-spacing": [
+        "error",
+        {
+          "beforeColon": true,
+          "afterColon": true
+        }
+      ],
+      "no-unused-vars": [
+        "error",
+        {
+          "argsIgnorePattern": "^_",
+          "varsIgnorePattern": "^_"
+        }
+      ]
+    }
+  }
+}
