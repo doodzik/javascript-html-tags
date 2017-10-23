@@ -50,6 +50,12 @@ module.exports = {
     return `<img ${strArgs}/>`
   },
 
+  input() {
+    const [args, _content] = concat.apply(this, arguments)
+    const strArgs = stringifyArgs(args).trim()
+    return `<input ${strArgs}/>`
+  },
+
   div() {
     const [args, content] = concat.apply(this, arguments)
     const strArgs = stringifyArgs(args).trim()

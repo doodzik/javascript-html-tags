@@ -14,6 +14,8 @@ const testDsl = {
           withContent : ['<head >hello</head>', 'hello']},
   html : {withArgs : ['<!DOCTYPE html><html foo="bar"></html>', {foo : 'bar'}],
           withContent : ['<!DOCTYPE html><html >hello</html>', 'hello']},
+  input : {withArgs : ['<input foo="bar"/>', {foo : 'bar'}],
+        withContent : ['<input />', 'hello']},
   img : {withArgs : ['<img foo="bar"/>', {foo : 'bar'}],
         withContent : ['<img />', 'hello']},
   div : {withArgs : ['<div foo="bar"></div>', {foo : 'bar'}],
